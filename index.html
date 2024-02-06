@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Eshaan Sharma</div>
+        <div >
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+         
+            <li><a href="#contact">Contact</a></li>
+            <li><i class="fa-solid fa-gear" id="light-icon" ></i> </li>
+
+           
+        </ul>
+        <!-- <div id="light-icon"></div>
+            <i class="fa-solid fa-gear" ></i>
+        </div> -->
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Eshaan Sharma</div>
+        <div class="hamburger-menu" >
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span> 
+        </div>
+        <div class="menu-links">
+            <li ><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li ><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+            <li ><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li ><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li ><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+           
+            <li ><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li id="light-icon-hamburger"><i class="fa-solid fa-gear fa-xl" ></i> </li>
+            
+        </div>
+        </div>
+    </nav>
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="./assets/_DSC0013-DN-denoise.png" alt="profile_pic" >
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h1 class="title" id="load_name">Eshaan Sharma</h1>
+        <p class="section_text_p2" >
+            I have been passionate about technology since childhood, I'm a curious explorer in the digital realm. With a knack for problem-solving and an insatiable thirst for knowledge, I delve into the intricate world of coding, software development, and emerging tech trends. From tinkering with circuits to crafting elegant lines of code, every challenge fuels my passion. I thrive on the exhilarating pace of innovation and the endless possibilities technology offers to reshape our world. Whether it's developing apps, diving into AI, or exploring cybersecurity, I am driven by the belief that technology holds the key to unlocking a brighter, more connected future.</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')" >
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials_container" >
+           
+            <a href="https://www.linkedin.com/in/eshaan-sharma-3b7419283/">
+            <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+            
+            <a href="https://github.com/SinisterLlamma">
+            <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            
+        </div>
+
+    </div>
+</section>
+<section id="achievements">
+    <p class="section__text__p1">Things I have done</p>
+    <h1 class="title">Achievements</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Acedemic </h2>
+          <div class="article-container">
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>99.5%</h3>
+                <p>JEE Mains</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Rank 4700</h3>
+                <p>JEE Advanced</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Rank 82</h3>
+                <p>UGEE</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Scholar Silver Coin</h3>
+                <p>Awarded for Acedemic excellence for 5 consecutive years</p>
+              </div>
+            </article>
+           
+           
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Random Stuff</h2>
+          <div class="article-container">
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>1450 peak chess.com rating</h3>
+                <p>Suck it! Loosers.</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Trinity Grade 3</h3>
+                <p>Guitar</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Badminton</h3>
+                <p>District Level Player</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-medal"></i>
+              <div>
+                <h3>Not impressed?</h3>
+                <p>Nobody asked </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#education'"
+    />
+  </section>
+  <section id="education">
+    <p class="section__text__p1">My</p>
+    <h1 class="title">Education</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+         
+          <div class="article-container">
+            <article>
+                <i class="fa-solid fa-school"></i>
+              <div>
+                <h3> Silver Oaks</h3>
+                <p> School (Kindergarten to 4th)</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-school"></i>
+              <div>
+                <h3>Delhi Public School Hyderabad</h3>
+                <p>School (4th to 10th)</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-school"></i>
+              <div>
+                <h3>FIITJEE </h3>
+                <p>Intermediate (11th -12th)</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h3>IIIT Hyderabad</h3>
+                <p>College (Btech in Computer Science and Masters by research)</p>
+                <p>2023-2027/2028</p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#skills'"
+    />
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tech (I can ChatGPT)</h2>
+          <div class="article-container">
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>Python</h3>
+                <p>Working knowledge</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>C++</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Random</h2>
+          <div class="article-container">
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>Creative Arts</h3>
+                <p>I can Draw!!!!!!</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>Guitar</h3>
+                <p>I play the same 3 chord progression</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>I can lift heavy weights</h3>
+                <p>A very usefull skill indeed</p>
+              </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-screwdriver-wrench fa-l"></i>
+              <div>
+                <h3>Git and GitHub</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#blog'"
+    />
+  </section>
+  <section id="blog">
+    <div class="blog-container">
+    <p class="section__text__p1">Latest Posts</p>
+    <h1 class="title">Blog</h1>
+    <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('blog1.html')">
+            Blog 1
+        </button>
+        <button class="btn btn-color-1" onclick="window.open('blog2.html')">
+            Blog 2
+        </button>
+    </div>
+</div>
+<div id="arrow-blog">
+<img
+src="./assets/arrow.png"
+alt="Arrow icon"
+class="icon arrow"
+onclick="location.href='#contact'"
+/>
+</div>
+</section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <p><a href="mailto:eshaansharma095@gmail.com">eshaansharma095@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        <p><a href="https://www.linkedin.com/in/eshaan-sharma-3b7419283/">  LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+         
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Eshaan Sharma . All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

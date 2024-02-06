@@ -1,0 +1,107 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Title</title>
+    <link rel="stylesheet" href="blog.css">
+    
+    
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section>
+       
+       
+        
+        <div class="blog">
+        <article>
+            <h2>How to Get Startup Ideas</h2>
+            <p>The way to get startup ideas is not to try to think of startup ideas. It's to look for problems, preferably problems you have yourself.
+
+                The very best startup ideas tend to have three things in common: they're something the founders themselves want, that they themselves can build, and that few others realize are worth doing. Microsoft, Apple, Yahoo, Google, and Facebook all began this way.
+                
+                Problems
+                
+                Why is it so important to work on a problem you have? Among other things, it ensures the problem really exists. It sounds obvious to say you should only work on problems that exist. And yet by far the most common mistake startups make is to solve problems no one has.
+                
+                I made it myself. In 1995 I started a company to put art galleries online. But galleries didn't want to be online. It's not how the art business works. So why did I spend 6 months working on this stupid idea? Because I didn't pay attention to users. I invented a model of the world that didn't correspond to reality, and worked from that. I didn't notice my model was wrong until I tried to convince users to pay for what we'd built. Even then I took embarrassingly long to catch on. I was attached to my model of the world, and I'd spent a lot of time on the software. They had to want it!
+                
+                Why do so many founders build things no one wants? Because they begin by trying to think of startup ideas. That m.o. is doubly dangerous: it doesn't merely yield few good ideas; it yields bad ideas that sound plausible enough to fool you into working on them.
+                
+                At YC we call these "made-up" or "sitcom" startup ideas. Imagine one of the characters on a TV show was starting a startup. The writers would have to invent something for it to do. But coming up with good startup ideas is hard. It's not something you can do for the asking. So (unless they got amazingly lucky) the writers would come up with an idea that sounded plausible, but was actually bad.
+                
+                For example, a social network for pet owners. It doesn't sound obviously mistaken. Millions of people have pets. Often they care a lot about their pets and spend a lot of money on them. Surely many of these people would like a site where they could talk to other pet owners. Not all of them perhaps, but if just 2 or 3 percent were regular visitors, you could have millions of users. You could serve them targeted offers, and maybe charge for premium features. [1]
+                
+                The danger of an idea like this is that when you run it by your friends with pets, they don't say "I would never use this." They say "Yeah, maybe I could see using something like that." Even when the startup launches, it will sound plausible to a lot of people. They don't want to use it themselves, at least not right now, but they could imagine other people wanting it. Sum that reaction across the entire population, and you have zero users. [2]
+                
+                Well
+                
+                When a startup launches, there have to be at least some users who really need what they're making — not just people who could see themselves using it one day, but who want it urgently. Usually this initial group of users is small, for the simple reason that if there were something that large numbers of people urgently needed and that could be built with the amount of effort a startup usually puts into a version one, it would probably already exist. Which means you have to compromise on one dimension: you can either build something a large number of people want a small amount, or something a small number of people want a large amount. Choose the latter. Not all ideas of that type are good startup ideas, but nearly all good startup ideas are of that type.
+                
+                Imagine a graph whose x axis represents all the people who might want what you're making and whose y axis represents how much they want it. If you invert the scale on the y axis, you can envision companies as holes. Google is an immense crater: hundreds of millions of people use it, and they need it a lot. A startup just starting out can't expect to excavate that much volume. So you have two choices about the shape of hole you start with. You can either dig a hole that's broad but shallow, or one that's narrow and deep, like a well.
+                
+                Made-up startup ideas are usually of the first type. Lots of people are mildly interested in a social network for pet owners.
+                
+                Nearly all good startup ideas are of the second type. Microsoft was a well when they made Altair Basic. There were only a couple thousand Altair owners, but without this software they were programming in machine language. Thirty years later Facebook had the same shape. Their first site was exclusively for Harvard students, of which there are only a few thousand, but those few thousand users wanted it a lot.
+                
+                When you have an idea for a startup, ask yourself: who wants this right now? Who wants this so much that they'll use it even when it's a crappy version one made by a two-person startup they've never heard of? If you can't answer that, the idea is probably bad. [3]
+                
+                You don't need the narrowness of the well per se. It's depth you need; you get narrowness as a byproduct of optimizing for depth (and speed). But you almost always do get it. In practice the link between depth and narrowness is so strong that it's a good sign when you know that an idea will appeal strongly to a specific group or type of user.
+                
+                But while demand shaped like a well is almost a necessary condition for a good startup idea, it's not a sufficient one. If Mark Zuckerberg had built something that could only ever have appealed to Harvard students, it would not have been a good startup idea. Facebook was a good idea because it started with a small market there was a fast path out of. Colleges are similar enough that if you build a facebook that works at Harvard, it will work at any college. So you spread rapidly through all the colleges. Once you have all the college students, you get everyone else simply by letting them in.
+                
+                Similarly for Microsoft: Basic for the Altair; Basic for other machines; other languages besides Basic; operating systems; applications; IPO.
+                .</p>
+            <!-- <button id="like-button">Like</button> -->
+            <div id="likey">
+                <div id="like-button">
+                <i class="fa-solid fa-heart"></i>
+                </div>
+                <div id="likecounter"><p id="like-count">0</p></div>
+            </div>
+        </article>
+        </div>
+        <h2>Comments</h2>
+        <div class="blog">
+            
+        <article>
+            <h4>Atharv Johar</h1>
+            <p>What a shit website. (its actually good)</p>
+        </article>
+        
+        </div>
+        <br> <br>
+        <div class="blog">
+            
+            <article>
+                <h4>Soham Chaterjee and Vishal Rao</h1>
+                <p>Marry Me!</p>
+            </article>
+           
+            </div>
+    </section>
+
+    <script>
+   
+        var likeCount = localStorage.getItem('likeCount');
+    
+        if (likeCount === null) {
+            likeCount = 0;
+        }
+    
+       
+        document.getElementById('like-count').textContent = likeCount;
+    
+        document.getElementById('like-button').addEventListener('click', function() {
+       
+            likeCount++;
+    
+            document.getElementById('like-count').textContent = likeCount;
+    
+            localStorage.setItem('likeCount', likeCount);
+        });
+    </script>
+</body>
+</html>

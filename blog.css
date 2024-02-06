@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Noto+Color+Emoji&family=Noto+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Sixtyfour&display=swap');
+*{
+   
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    
+    color: rgb(85,85,85);
+}
+/* transition*/
+a,.btn{
+    transition: all 0.3s ease;
+}
+/* Desktop navigation */
+nav, .nav-links{
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between;
+ */
+}
+nav
+{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    text-decoration-color: aliceblue;
+}
+a:hover{
+    color: #939393;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+.blog{
+    padding: 2vh;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    min-width: fit-content;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+h2{
+    text-align: center;
+}
+.like-button{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.likey{
+    display: flex;
+    align-items: center; /* optional: to vertically align the items in the middle */
+    gap: 10px; /* optional: to add some space between the items */
+}
+
+#likecounter {
+   
+    flex: 5;
+}
